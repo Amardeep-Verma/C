@@ -190,25 +190,177 @@ int main()
 //     return 0;
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
+
+// int main() {
+//     int marks;
+
+//     printf("Enter your marks: ");
+//     scanf("%d", &marks);
+
+//     if (marks < 30) {
+//         printf("GRADE C\n");
+//     } else if (marks >= 30 && marks < 70) {
+//         printf("GRADE B\n");
+//     } else if (marks >= 70 && marks < 90) {
+//         printf("GRADE A\n");
+//     } else if (marks >= 90 && marks <= 100) {
+//         printf("GRADE A+\n");
+//     } else {
+//         printf("Wrong marks entered\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main()
+// {
+//     char ch;
+//     printf("Enter character : ");
+//     scanf("%c",&ch);
+
+//     if(ch >='A' && ch<='Z'){
+//         printf("Upper case");
+//     }
+//     else if (ch >='a' && ch <='z'){
+//         printf("lower case");
+
+//     }else{
+//         printf("not a english letter ");
+//     }
+//     return 0;
+// }
+
+
+// program to check if a number is natural or not .
+
+
+// #include <stdio.h>
+
+// int isNaturalNumber(int num) {
+//     return (num > 0);
+// }
+
+// int main() {
+//     int num;
+
+//     // Input from the user
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+
+//     // Check if the number is a natural number
+//     if (isNaturalNumber(num)) {
+//         printf("%d is a natural number.\n", num);
+//     } else {
+//         printf("%d is not a natural number.\n", num);
+//     }
+
+//     return 0;
+//   }
+
+
+
+
+
+
+// LOOPS 
+
+// print values from 1 to 100
+// #include<stdio.h>
+// int main()
+// {
+// for(int i = 1 ; i <=50  ; i++){
+//     printf("Hello world \n");
+// }
+// return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     // decrement operator
+//     // ++i  : pre increment, it means value of i will be increased before using its value in expression
+//     // i++   : post increment, it means value of i will be increased after using its value in expression
+
+//     // --i  : pre decrement , it means value of i will be decrease before using its value in expression
+//     // i--   : post decrement , it means value of i will be decrease after using its value in expression
+
+//     int i=1;
+
+//     printf("%d\n",i--);
+//     printf("%d\n",i);
+
+//     printf("%d\n",--i);
+//     printf("%d\n",i);
+
+    
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     for(char ch ='a';ch<='z';ch++){
+//         printf("%c\n",ch);
+//     }
+// }
+
+
+// program that calculates the sum
+//  of all even numbers from 1 to 50 using a for loop:
+ 
+
+// #include<stdio.h>
+// int main()
+// {   int sum = 0;
+//     for(int i=1 ; i <=50; i++){
+//          //check if the number is even 
+//          if (i % 2 == 0 ){
+//             // add the even number to the sum 
+//             sum +=i;
+//          }
+//     }
+//     printf("Sum of even numbers from 1 to 50 : %d\n", sum );
+//     return 0;
+// }
+
+
+// program to display multiplication table using a for loop
+
+// #include<stdio.h>
+// int main()
+// {
+//     int number;
+
+//     printf("Enter a number: ");
+//     scanf("%d",&number);
+
+//     // display multiplication table for the given number]
+//     printf("\nMultiplication Table for %d:\n",number);
+//     for(int i=1;i<=10;i++){
+//         printf("%d x %d = %d \n",number,i,number*i);
+//     }
+// }
+
+#include <stdio.h>
 
 int main() {
-    int marks;
+    int number;
+    long long factorial = 1;
 
-    printf("Enter your marks: ");
-    scanf("%d", &marks);
+    // Get the number from the user
+    printf("Enter a number: ");
+    scanf("%d", &number);
 
-    if (marks < 30) {
-        printf("GRADE C\n");
-    } else if (marks >= 30 && marks < 70) {
-        printf("GRADE B\n");
-    } else if (marks >= 70 && marks < 90) {
-        printf("GRADE A\n");
-    } else if (marks >= 90 && marks <= 100) {
-        printf("GRADE A+\n");
-    } else {
-        printf("Wrong marks entered\n");
+    // Calculate factorial using a for loop
+    for (int i = 1; i <= number; i++) {
+        factorial *= i;
     }
+
+    // Display the factorial
+    printf("Factorial of %d is: %lld\n", number, factorial);
 
     return 0;
 }
