@@ -169,180 +169,180 @@ int main()
     }
 }
 
-*/
 
-// #include<stdio.h>
-// int main()
-// {
-//     int marks;
-//     printf("Enter marks(0-100)");
-//     scanf("%d",&marks);
 
-//     if(marks >=0 && marks <=30){
-//         printf("FAIL\n");
-//     }else if(marks >30 && marks <=100){
-//         printf("PASS\n");
-//     }else{
-//         printf("Wrong marks ");
+#include<stdio.h>
+int main()
+{
+    int marks;
+    printf("Enter marks(0-100)");
+    scanf("%d",&marks);
+
+    if(marks >=0 && marks <=30){
+        printf("FAIL\n");
+    }else if(marks >30 && marks <=100){
+        printf("PASS\n");
+    }else{
+        printf("Wrong marks ");
 
  
-//     }
-//     return 0;
-// }
+    }
+    return 0;
+}
 
-// #include<stdio.h>
+#include<stdio.h>
 
-// int main() {
-//     int marks;
+int main() {
+    int marks;
 
-//     printf("Enter your marks: ");
-//     scanf("%d", &marks);
+    printf("Enter your marks: ");
+    scanf("%d", &marks);
 
-//     if (marks < 30) {
-//         printf("GRADE C\n");
-//     } else if (marks >= 30 && marks < 70) {
-//         printf("GRADE B\n");
-//     } else if (marks >= 70 && marks < 90) {
-//         printf("GRADE A\n");
-//     } else if (marks >= 90 && marks <= 100) {
-//         printf("GRADE A+\n");
-//     } else {
-//         printf("Wrong marks entered\n");
-//     }
+    if (marks < 30) {
+        printf("GRADE C\n");
+    } else if (marks >= 30 && marks < 70) {
+        printf("GRADE B\n");
+    } else if (marks >= 70 && marks < 90) {
+        printf("GRADE A\n");
+    } else if (marks >= 90 && marks <= 100) {
+        printf("GRADE A+\n");
+    } else {
+        printf("Wrong marks entered\n");
+    }
 
-//     return 0;
-// }
-
-
-
-// #include<stdio.h>
-// int main()
-// {
-//     char ch;
-//     printf("Enter character : ");
-//     scanf("%c",&ch);
-
-//     if(ch >='A' && ch<='Z'){
-//         printf("Upper case");
-//     }
-//     else if (ch >='a' && ch <='z'){
-//         printf("lower case");
-
-//     }else{
-//         printf("not a english letter ");
-//     }
-//     return 0;
-// }
+    return 0;
+}
 
 
-// program to check if a number is natural or not .
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter character : ");
+    scanf("%c",&ch);
+
+    if(ch >='A' && ch<='Z'){
+        printf("Upper case");
+    }
+    else if (ch >='a' && ch <='z'){
+        printf("lower case");
+
+    }else{
+        printf("not a english letter ");
+    }
+    return 0;
+}
 
 
-// #include <stdio.h>
-
-// int isNaturalNumber(int num) {
-//     return (num > 0);
-// }
-
-// int main() {
-//     int num;
-
-//     // Input from the user
-//     printf("Enter a number: ");
-//     scanf("%d", &num);
-
-//     // Check if the number is a natural number
-//     if (isNaturalNumber(num)) {
-//         printf("%d is a natural number.\n", num);
-//     } else {
-//         printf("%d is not a natural number.\n", num);
-//     }
-
-//     return 0;
-//   }
+program to check if a number is natural or not .
 
 
+#include <stdio.h>
+
+int isNaturalNumber(int num) {
+    return (num > 0);
+}
+
+int main() {
+    int num;
+
+    // Input from the user
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Check if the number is a natural number
+    if (isNaturalNumber(num)) {
+        printf("%d is a natural number.\n", num);
+    } else {
+        printf("%d is not a natural number.\n", num);
+    }
+
+    return 0;
+  }
 
 
 
 
-// LOOPS 
 
-// print values from 1 to 100
-// #include<stdio.h>
-// int main()
-// {
-// for(int i = 1 ; i <=50  ; i++){
-//     printf("Hello world \n");
-// }
-// return 0;
-// }
 
-// #include<stdio.h>
-// int main()
-// {
-//     // decrement operator
-//     // ++i  : pre increment, it means value of i will be increased before using its value in expression
-//     // i++   : post increment, it means value of i will be increased after using its value in expression
+LOOPS 
 
-//     // --i  : pre decrement , it means value of i will be decrease before using its value in expression
-//     // i--   : post decrement , it means value of i will be decrease after using its value in expression
+print values from 1 to 100
+#include<stdio.h>
+int main()
+{
+for(int i = 1 ; i <=50  ; i++){
+    printf("Hello world \n");
+}
+return 0;
+}
 
-//     int i=1;
+#include<stdio.h>
+int main()
+{
+    // decrement operator
+    // ++i  : pre increment, it means value of i will be increased before using its value in expression
+    // i++   : post increment, it means value of i will be increased after using its value in expression
 
-//     printf("%d\n",i--);
-//     printf("%d\n",i);
+    // --i  : pre decrement , it means value of i will be decrease before using its value in expression
+    // i--   : post decrement , it means value of i will be decrease after using its value in expression
 
-//     printf("%d\n",--i);
-//     printf("%d\n",i);
+    int i=1;
+
+    printf("%d\n",i--);
+    printf("%d\n",i);
+
+    printf("%d\n",--i);
+    printf("%d\n",i);
 
     
-// }
+}
 
-// #include<stdio.h>
-// int main()
-// {
-//     for(char ch ='a';ch<='z';ch++){
-//         printf("%c\n",ch);
-//     }
-// }
+#include<stdio.h>
+int main()
+{
+    for(char ch ='a';ch<='z';ch++){
+        printf("%c\n",ch);
+    }
+}
 
 
-// program that calculates the sum
-//  of all even numbers from 1 to 50 using a for loop:
+program that calculates the sum
+ of all even numbers from 1 to 50 using a for loop:
  
 
-// #include<stdio.h>
-// int main()
-// {   int sum = 0;
-//     for(int i=1 ; i <=50; i++){
-//          //check if the number is even 
-//          if (i % 2 == 0 ){
-//             // add the even number to the sum 
-//             sum +=i;
-//          }
-//     }
-//     printf("Sum of even numbers from 1 to 50 : %d\n", sum );
-//     return 0;
-// }
+#include<stdio.h>
+int main()
+{   int sum = 0;
+    for(int i=1 ; i <=50; i++){
+         //check if the number is even 
+         if (i % 2 == 0 ){
+            // add the even number to the sum 
+            sum +=i;
+         }
+    }
+    printf("Sum of even numbers from 1 to 50 : %d\n", sum );
+    return 0;
+}
 
 
-// program to display multiplication table using a for loop
+program to display multiplication table using a for loop
 
-// #include<stdio.h>
-// int main()
-// {
-//     int number;
+#include<stdio.h>
+int main()
+{
+    int number;
 
-//     printf("Enter a number: ");
-//     scanf("%d",&number);
+    printf("Enter a number: ");
+    scanf("%d",&number);
 
-//     // display multiplication table for the given number]
-//     printf("\nMultiplication Table for %d:\n",number);
-//     for(int i=1;i<=10;i++){
-//         printf("%d x %d = %d \n",number,i,number*i);
-//     }
-// }
+    // display multiplication table for the given number]
+    printf("\nMultiplication Table for %d:\n",number);
+    for(int i=1;i<=10;i++){
+        printf("%d x %d = %d \n",number,i,number*i);
+    }
+}
 
 #include <stdio.h>
 
@@ -364,3 +364,217 @@ int main() {
 
     return 0;
 }
+
+
+WHILE LOOP
+syntax -- while (condition) {
+                    // code
+             }
+
+#include<stdio.h>
+int main()
+{
+    int i = 1;
+    while(i<=5){
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
+}
+
+
+
+
+// PRINT THE NUMBERS FROM 0 TO N , IF N IS GIVEN BY USER
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a number :");
+    scanf("%d",&n);
+
+    int i = 0;
+    while (i <=n){
+        printf("%d\n",i);
+        i++;
+    }
+}
+
+
+
+// Print the sum of First n natural number 
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter a number");
+    scanf("%d",&n);
+
+    int sum = 0;
+    for(int i=1;i<=n;i++){
+        sum = sum+i;
+    }
+    printf("The sum is %d",sum);
+    return 0;
+}
+
+
+// print multiplication table of any number
+
+#include<stdio.h>
+int main()
+{
+    int table;
+    printf("Enter table no :\n");
+    scanf("%d", &table);
+    
+    for(int i = 1;i<=10;i++){
+        printf("%d x %d = %d\n",table,i,i*table);
+    }
+    
+}
+
+
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++){
+        if(i==4){
+        break;
+    }
+    printf("%d\n",i);
+}
+printf("end");
+return 0;
+}
+
+
+
+// Keep taking numbers as input from user until user enters an odd number.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    do{
+        printf("Enter number : ");
+        scanf("%d",&num);
+        printf("%d\n",num);
+        if(num % 2 !=0){
+            break;
+        }
+    }while(1);
+    printf("Thank you");
+}
+
+
+
+// Keep taking numbers as input from user until user enters a number which is multiple of 7
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    do {
+        printf("Enter a number : ");
+        scanf("%d",&n);
+        printf("%d\n",n);
+
+        if(n % 7 == 0){
+            break;
+        }
+    } while (1);
+    {
+        printf("Thank you");
+    }
+    
+}
+
+
+
+// CONTINUE STATEMENT
+
+#include<stdio.h>
+int main()
+{
+    for(int i=1;i<=5;i++){
+        if(i==3){  // skips 3
+            continue;
+        }
+        printf("%d\n",i);
+    }
+}
+
+
+int main()
+{
+    for(int i=1;i<=10;i++){
+        if(i==6){  // skips 3
+            continue;
+        }
+        printf("%d\n",i);
+    }
+}
+
+
+
+
+// Print odd numbers from 5 to 50
+#include<stdio.h>
+int main()
+{
+    for(int i=5;i<=50;i++){
+        if(i % 2 !=0 ){
+            printf("%d\n",i);
+        }
+    }
+}
+
+
+// Program to find factorial of a number n 
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter number : ");
+    scanf("%d",&n);
+
+    int fact =1 ;
+    for(int i=1;i<=n;i++){
+        fact = fact * i;  // fact *= i
+    }
+    printf("Final factorial is %d",fact);
+}
+
+
+// Multiplication table in reverse order
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter number : ");
+    scanf("%d",&n);
+
+    for(int i=10; i>=1; i--){
+        printf("%d*%d=%d \n",n,i,n*i);
+    }
+}
+
+
+
+//sum of all numbers between 5 to 50
+
+#include<stdio.h>
+int main()
+{
+    int sum=0;
+    for(int i=5;i<=50;i++){
+        sum+= i;
+    }
+    printf("Sum is %d",sum);
+}
+
+*/
