@@ -577,4 +577,169 @@ int main()
     printf("Sum is %d",sum);
 }
 
+
+
+// FUNCTIONS
+
+// write 2 functions one to print hello and other to print goodbye
+#include<stdio.h>
+
+void printHello(); // declaration prototype 
+
+void goodBye();
+int main(){
+    printHello();  // function call
+    goodBye();
+    return 0;
+}
+
+void printHello(){ // function definition
+    printf("Hello\n");
+}
+void goodBye(){
+    printf("Good Bye!\n");
+}
+
+
+//  write a function that prints Namaste if user is indian & bonjour if user is french
+#include<stdio.h>
+void printNamaste();
+void printBonjour();
+
+int main(){
+    char ch;
+    printf("Enter f for french and i for indian\n");
+    scanf("%c",&ch);
+    
+    if(ch == 'i' ){
+            printNamaste();
+    } else if( ch == 'f'){
+        printBonjour();
+    }else{
+        printf("Incorrect value entered ");
+    }
+
+    return 0;
+}
+
+void printNamaste(){
+    printf("Namaste \n"); 
+
+}
+void printBonjour(){
+    printf("Bonjour!");
+}
+
+
+
+// #include<stdio.h>
+//  int sum(int a , int b );
+
+//  int main(){
+//     int a,b;
+//     printf("Enter two numbers : ");
+//     scanf("%d %d", &a,&b);
+
+//     int s = sum(a+b);
+//     return 0;
+//  }
+//  int sum(int x, int y ){
+//     return x + y;
+//  }
+
+
+#include<stdio.h>
+void printTable(int n);
+int main()
+{
+ int n ;
+ printf("enter number : ");
+ scanf("%d",&n);0-9
+
+ printTable(n);  // argument/ actual parameter
+ return 0;
+}
+
+void printTable(int n ){
+    for (int i=1;i<=10;i++) {
+        printf("%d * %d = %d\n",n,i,n*i);
+}
+}
+
+
+
+
+#include <stdio.h>
+
+void calculatePrice(float value);
+
+int main() {
+    float value = 100.0;
+    calculatePrice(value);
+    printf("value is %f \n", value);
+    return 0;
+}
+
+void calculatePrice(float value) {
+    value = value + (0.18 * value); // tax is added to the price of an item
+    printf("final price is: %f", value);
+}
+
+
+
+// Use library functions to calculate the square of a number given by user.
+
+// <math.h> --> pow (number , 2) = number ^ 2
+//              pow (number , 4) = number ^ 4
+
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    double n = 4;
+    printf("%f", pow(n, 2));
+    return 0;
+}
+
+
+
+// square of a number
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{   double d;
+    printf("Enter no : ");
+    scanf("%lf",&d);
+    printf("%f", pow (d,2));
+    return 0;
+}
+
 */
+
+// write a fuunction to calculate area of a square , a circle & a rectangle
+
+#include<stdio.h>
+#include<math.h>
+
+float squareArea(float side);
+float circleArea(float rad);
+float rectangleArea(float a , float b);
+
+int main()
+{
+    float a = 5.0;
+    float b = 10.0;
+
+    printf("Area is : %f", rectangleArea(a,b));
+    return 0;
+}
+float SquareArea(float side){
+    return side*side;
+}
+float  CircleArea(float rad){
+    return 3.14 *rad *rad ;
+}
+float rectangleArea(float a, float b) {
+    return a * b;
+}
