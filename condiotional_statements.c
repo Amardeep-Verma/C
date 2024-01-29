@@ -420,6 +420,7 @@ int main()
 }
 
 
+
 // print multiplication table of any number
 
 #include<stdio.h>
@@ -715,7 +716,7 @@ int main()
     return 0;
 }
 
-*/
+
 
 // write a fuunction to calculate area of a square , a circle & a rectangle
 
@@ -742,4 +743,104 @@ float  CircleArea(float rad){
 }
 float rectangleArea(float a, float b) {
     return a * b;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    char str[10];
+
+    printf("Enter your name");
+    scanf("%s",&str);
+    printf("Your name is %s",str);
+    return 0 ;
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a=5;
+   
+    int c;
+
+    printf("The value of a = %d\n",a);
+    printf("Enter the value of c : ");
+    scanf("%d",&c);
+    printf("Value of c is %d",c);
+}
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=5;
+
+    printf("Before swapping a = %d and b = %d\n",a,b);
+    printf("After swapping a = %d and b = %d\n" ,b,a );
+
+    return 0;
+
+}
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the value a and b : ");
+    scanf("%d %d",&a,&b);
+    a= a+ b;
+    b = a -b;
+    a =a -b;
+    printf("Swapped value are %d\t %d",a,b);
+    return 0;
+}
+
+
+
+// RECURSION - WHEN A FUNCTION CALLS ITSELF
+
+#include<stdio.h>
+
+void printHW(int count);
+int main() {
+    printHW(5);
+    return 0;
+}
+
+// recursive function
+void printHW(int count) {
+    if (count == 0)
+    {
+        return;
+    }
+    printf("Hello world\n");
+    printHW(count-1);
+
+}
+    
+*/
+
+// program to find largest of three numbers
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("Enter three values to find the largest : ");
+    scanf("%f%f%f",&a,&b,&c);
+
+    if(a>=b && a>=c){
+        printf("%f is largest ",a);
+
+    }if (b>=a && b>=c){
+        printf("%f is largest ",b);
+    }if (c>=a && c>=b){
+        printf("%f is largest ",c);
+    }
+    return 0;
 }
