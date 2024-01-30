@@ -169,7 +169,24 @@ int main()
     }
 }
 
+// program to find largest of three numbers
+#include<stdio.h>
+int main()
+{
+    float a,b,c;
+    printf("Enter three values to find the largest : ");
+    scanf("%f%f%f",&a,&b,&c);
 
+    if(a>=b && a>=c){
+        printf("%f is largest ",a);
+
+    }if (b>=a && b>=c){
+        printf("%f is largest ",b);
+    }if (c>=a && c>=b){
+        printf("%f is largest ",c);
+    }
+    return 0;
+}
 
 #include<stdio.h>
 int main()
@@ -803,7 +820,7 @@ int main()
 
 
 
-// RECURSION - WHEN A FUNCTION CALLS ITSELF
+// RECURSION - WHEN A FUNCTION CALLS ITSELF.
 
 #include<stdio.h>
 
@@ -824,23 +841,72 @@ void printHW(int count) {
 
 }
     
-*/
 
-// program to find largest of three numbers
-#include<stdio.h>
+
+
+#include <stdio.h>  
+  
+int main()  
+{  
+    int A;  
+  
+    printf("Enter the number A: ");  
+    scanf("%d", &A);  
+  
+    if (A > 0)  
+        printf("%d is positive.", A);  
+    else if (A < 0)  
+        printf("%d is negative.", A);  
+    else if (A == 0)  
+        printf("%d is zero.", A);  
+  
+    return 0;  
+}  
+
+
+
+#include <stdio.h>
+ 
+
 int main()
 {
-    float a,b,c;
-    printf("Enter three values to find the largest : ");
-    scanf("%f%f%f",&a,&b,&c);
-
-    if(a>=b && a>=c){
-        printf("%f is largest ",a);
-
-    }if (b>=a && b>=c){
-        printf("%f is largest ",b);
-    }if (c>=a && c>=b){
-        printf("%f is largest ",c);
+    char ch = 'A';
+ 
+ 
+    if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E'
+        || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
+        || ch == 'u' || ch == 'U') {
+ 
+        printf("The character %c is a vowel.\n", ch);
     }
+    else {
+        printf("The character %c is a consonant.\n", ch);
+    }
+ 
     return 0;
+}
+
+*/
+//  program to find LCM of two numbers 
+#include <stdio.h> 
+
+
+int main() 
+{ 
+	int x = 15, y = 25, max; 
+	max = (x > y) ? x : y; 
+
+	// While loop to check if max variable 
+	// is divisible by x and y 
+	while (1) { 
+		if (max % x == 0 && max % y == 0) { 
+			printf("The LCM of %d and %d is %d.", x, y, 
+				max); 
+			break; 
+		} 
+
+		++max; 
+	} 
+
+	return 0; 
 }
