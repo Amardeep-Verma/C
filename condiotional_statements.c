@@ -886,7 +886,7 @@ int main()
     return 0;
 }
 
-*/
+
 //  program to find LCM of two numbers 
 #include <stdio.h> 
 
@@ -909,4 +909,29 @@ int main()
 	} 
 
 	return 0; 
+}
+
+*/
+
+
+#include<stdio.h>
+
+int main() {
+    int row, coloumns;
+    char symbol;  // Use char for a single character
+
+    printf("Enter no of rows: ");
+    scanf("%d", &row);
+    printf("Enter no of coloumns: ");
+    scanf("%d", &coloumns);
+    printf("Enter symbol: ");
+    scanf(" %c", &symbol);  // Notice the space before %c to consume any previous newline character
+
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < coloumns; j++)
+            printf("%c ", symbol);  // Use %c for printing characters
+        printf("\n");  // Add a newline after each row
+    }
+
+    return 0;
 }
