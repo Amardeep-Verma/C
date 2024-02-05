@@ -20,25 +20,6 @@ int main()
 }
 
 // program that takes a character as input and prints "Vowel" if it is a vowel (a, e, i, o, u), and "Consonant" otherwise.
-#include <stdio.h>
-
-int main() {
-    char ch;
-
-    // Input character from user
-    printf("Enter a character: ");
-    scanf(" %c", &ch);
-
-    // Check if the character is a vowel or consonant
-    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-        printf("Vowel\n");
-    } else {
-        printf("Consonant\n");
-    }
-
-    return 0;
-}
 
 
 
@@ -911,27 +892,224 @@ int main()
 	return 0; 
 }
 
-*/
+
 
 
 #include<stdio.h>
 
 int main() {
     int row, coloumns;
-    char symbol;  // Use char for a single character
+    char symbol;  
 
     printf("Enter no of rows: ");
     scanf("%d", &row);
     printf("Enter no of coloumns: ");
     scanf("%d", &coloumns);
     printf("Enter symbol: ");
-    scanf(" %c", &symbol);  // Notice the space before %c to consume any previous newline character
+    scanf(" %c", &symbol);  
 
     for(int i = 0; i < row; i++) {
         for(int j = 0; j < coloumns; j++)
-            printf("%c ", symbol);  // Use %c for printing characters
-        printf("\n");  // Add a newline after each row
+            printf("%c ", symbol);  
+        printf("\n"); 
     }
 
     return 0;
+}
+
+
+// divide two numbers
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, b, q, r;
+
+    printf("Enter first number: ");
+    scanf("%f", &a);
+
+    printf("Enter second number: ");
+    scanf("%f", &b);
+
+    q = a / b;
+    r = fmod(a, b);
+
+    printf("Quotient = %f\nRemainder = %f", q, r);
+
+    return 0;
+}
+
+
+
+// calculate area of rectangle
+
+#include<stdio.h>
+int main()
+{
+    float length,breadth,area;
+    printf("Enter length of the rectangle:");
+    scanf("%f",&length);
+    printf("Enter breadth of the rectangle:");
+    scanf("%f",&breadth);
+    area = length * breadth ;
+    printf("Area of the rectangle is %.2f",area);
+    return 0;
+}
+
+
+// calculate area of a circle
+#include<stdio.h>
+int main()
+{
+    float radius,area;
+    printf("Enter radius of the circle: ",radius    );
+    scanf("%f",&radius);
+
+    area = 3.14 * radius * radius;
+    printf("Arae of the circle is %.2f",area);
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main() {
+  
+    double celsius, fahrenheit;
+
+
+    printf("Enter temperature in Celsius: ");
+    scanf("%lf", &celsius);
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    
+    printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
+int main() {
+    char ch;
+
+    // Input character from user
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    // Check if the character is a vowel or consonant
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("Vowel\n");
+    } else {
+        printf("Consonant\n");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int rows, i, j;
+
+    // Input the number of rows from the user
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    // Loop to print the triangle
+    for (i = 1; i <= rows; i++) {
+        // Print spaces before the numbers
+        for (j = 1; j <= rows - i; j++) {
+            printf(" ");
+        }
+
+        // Print numbers in increasing order
+        for (j = 1; j <= i; j++) {
+            printf("%d ", j);
+        }
+
+        // Move to the next line after each row
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+// write a program to print flaot values
+
+#include<stdio.h>
+int main(){
+    float a ;
+    printf("Enter any number:");
+    scanf("%f",&a);
+    printf("You entered %f",a);
+    return 0;
+}
+
+
+
+
+// write a program to calculate average of three numbers
+#include<stdio.h>
+int main()
+{
+    int num1,num2,num3,average,sum;
+    printf("Enter  first number:");
+    scanf("%d", &num1);
+    printf("Enter second number:");
+    scanf("%d",&num2);
+    printf("Enter third number:");
+    scanf("%d",&num3);
+    sum = a +b +c;
+
+    average = sum/ 2;
+    printf("Average  is:%d\n",average);
+    return 0;
+
+}
+
+
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    float c;
+    printf("Enter first number:\n");
+    scanf("%d",&a);
+    printf("Enter second number:\n");
+    scanf("%d",&b);
+    printf("Enter third number:\n");
+    scanf("%f",&c);
+    printf("a+b = %d",a+b);
+    printf("a/b = %d ",a/b );
+    printf("a * b = %d",a*b);
+    printf("c + a/b = %f",c+a/b);
+    return 0;
+}
+
+// if(condition){
+//     //statements 
+// }
+
+*/
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter an integer : ");
+    scanf("%d", &a);
+    if(a > 0){
+        printf("It is positive");
+    }else if(a<0){
+
+    
+    printf("It is negative");
+}
 }
