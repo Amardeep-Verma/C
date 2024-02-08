@@ -1097,7 +1097,8 @@ int main()
 //     //statements 
 // }
 
-*/
+
+
 
 #include<stdio.h>
 int main()
@@ -1105,11 +1106,46 @@ int main()
     int a;
     printf("Enter an integer : ");
     scanf("%d", &a);
-    if(a > 0){
+    if(a > 0)
+    {
         printf("It is positive");
     }else if(a<0){
-
-    
-    printf("It is negative");
+     printf("It is negative");
+    }
+return 0;
 }
+
+
+#include<stdio.h>
+int main()
+{   int age;
+    printf("Enter your age:");
+    scanf("%d",&age);
+    if(age<18){
+        printf("You are a child.");
+    }else if(age>18){
+        printf("You are an adult");
+    }
+    return 0;
+}
+*/
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("Enter third number:");
+    scanf("%d",&c);
+    if(a>b && a>c){
+        printf("%d is greater than %d and %d",a,b,c);
+    }
+    if(b>a && b>c){
+        printf("%d is greater than %d and %d",b,a,c);
+    }if(c>a && c>b){
+        printf("%d is greater than %d and %d ",c,a,b);
+    }
+    return 0;
 }
