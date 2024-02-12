@@ -1128,24 +1128,54 @@ int main()
     }
     return 0;
 }
-*/
-#include<stdio.h>
-int main()
-{
-    int a,b,c;
-    printf("Enter first number:");
-    scanf("%d",&a);
-    printf("Enter second number:");
-    scanf("%d",&b);
-    printf("Enter third number:");
-    scanf("%d",&c);
-    if(a>b && a>c){
-        printf("%d is greater than %d and %d",a,b,c);
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+
+   
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if (num1 > num2) {
+        if (num1 > num3) {
+            printf("The greatest number is: %d\n", num1);
+        } else {
+            printf("The greatest number is: %d\n", num3);
+        }
+    } else {
+        if (num2 > num3) {
+            printf("The greatest number is: %d\n", num2);
+        } else {
+            printf("The greatest number is: %d\n", num3);
+        }
     }
-    if(b>a && b>c){
-        printf("%d is greater than %d and %d",b,a,c);
-    }if(c>a && c>b){
-        printf("%d is greater than %d and %d ",c,a,b);
-    }
+
     return 0;
 }
+*/
+
+//write a program to develop a calculator using switch   
+// write a program to print week days using switch
+// write a program to print vowels using switch
+
+#include<stdio.h>
+int main()
+{  int x = 2 , y;
+printf("enter the case value");
+scanf("%d",&y);
+switch(y){
+    case 1:
+    if(x==y){
+        printf("The value of x is 2");
+    }
+    case 2:
+    if(x==y){
+        printf("The value of x is 2");
+        break;
+    }
+ }
+  return 0;
+}
+
