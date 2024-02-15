@@ -1160,22 +1160,53 @@ int main() {
 // write a program to print week days using switch
 // write a program to print vowels using switch
 
+// #include<stdio.h>
+// int main()
+// {  int x = 2 , y;
+// printf("enter the case value");
+// scanf("%d",&y);
+// switch(y){
+//     case 1:
+//     if(x==y){
+//         printf("The value of x is 2");
+//     }
+//     case 2:
+//     if(x==y){
+//         printf("The value of x is 2");
+//         break;
+//     }
+//  }
+//   return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//    for (int i = 1;i<=10;i++)
+//    {
+//     printf("i=%d\n",i);
+//    }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int i=1;
+// 	while(i<=10)
+// 	{
+// 		printf("%d\n",i);
+// 		i = i+1;		
+// 	}
+// 	printf("\n");
+// }
+
 #include<stdio.h>
 int main()
-{  int x = 2 , y;
-printf("enter the case value");
-scanf("%d",&y);
-switch(y){
-    case 1:
-    if(x==y){
-        printf("The value of x is 2");
-    }
-    case 2:
-    if(x==y){
-        printf("The value of x is 2");
-        break;
-    }
- }
-  return 0;
+{
+    int i =1;
+    do {  
+printf("%d\n", i);  
+i++;  
+} while (i<= 10);  
 }
-
