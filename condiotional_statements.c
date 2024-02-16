@@ -1201,12 +1201,84 @@ int main() {
 // 	printf("\n");
 // }
 
-#include<stdio.h>
+
+
+// armstrong no 
+
+// #include<stdio.h>  
+//  int main()    
+// {    
+// int n,r,sum=0,temp;    
+// printf("enter the number=");    
+// scanf("%d",&n);    
+// temp=n;    
+// while(n>0)    
+// {    
+// r=n%10;    
+// sum=sum+(r*r*r);    
+// n=n/10;    
+// }    
+// if(temp==sum)    
+// printf("armstrong  number ");    
+// else    
+// printf("not armstrong number");    
+// return 0;  
+// }   
+
+// palindrome
+
+// #include<stdio.h>  
+// int main()    
+// {    
+// int n,r,sum=0,temp;    
+// printf("enter the number=");    
+// scanf("%d",&n);    
+// temp=n;    
+// while(n>0)    
+// {    
+// r=n%10;    
+// sum=(sum*10)+r;    
+// n=n/10;    
+// }    
+// if(temp==sum)    
+// printf("palindrome number ");    
+// else    
+// printf("not palindrome");   
+// return 0;  
+// }   #include<stdio.h>
 int main()
-{
-    int i =1;
-    do {  
-printf("%d\n", i);  
-i++;  
-} while (i<= 10);  
+{   int age;
+    printf("Enter your age:");
+    scanf("%d",&age);
+    if(age<18){
+        printf("You are a child.");
+    }else if(age>18){
+        printf("You are an adult");
+    }
+    return 0;
+}#include <stdio.h>
+
+int main() {
+    int num1, num2, num3;
+
+   
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+
+    if (num1 > num2) {
+        if (num1 > num3) {
+            printf("The greatest number is: %d\n", num1);
+        } else {
+            printf("The greatest number is: %d\n", num3);
+        }
+    } else {
+        if (num2 > num3) {
+            printf("The greatest number is: %d\n", num2);
+        } else {
+            printf("The greatest number is: %d\n", num3);
+        }
+    }
+
+    return 0;
 }
+b
