@@ -1246,39 +1246,75 @@ int main() {
 // printf("not palindrome");   
 // return 0;  
 // }   #include<stdio.h>
-int main()
-{   int age;
-    printf("Enter your age:");
-    scanf("%d",&age);
-    if(age<18){
-        printf("You are a child.");
-    }else if(age>18){
-        printf("You are an adult");
-    }
-    return 0;
-}#include <stdio.h>
+// int main()
+// {   int age;
+//     printf("Enter your age:");
+//     scanf("%d",&age);
+//     if(age<18){
+//         printf("You are a child.");
+//     }else if(age>18){
+//         printf("You are an adult");
+//     }
+//     return 0;
+// }#include <stdio.h>
 
-int main() {
-    int num1, num2, num3;
+// int main() {
+//     int num1, num2, num3;
 
    
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &num1, &num2, &num3);
+//     printf("Enter three numbers: ");
+//     scanf("%d %d %d", &num1, &num2, &num3);
 
-    if (num1 > num2) {
-        if (num1 > num3) {
-            printf("The greatest number is: %d\n", num1);
-        } else {
-            printf("The greatest number is: %d\n", num3);
-        }
-    } else {
-        if (num2 > num3) {
-            printf("The greatest number is: %d\n", num2);
-        } else {
-            printf("The greatest number is: %d\n", num3);
-        }
-    }
+//     if (num1 > num2) {
+//         if (num1 > num3) {
+//             printf("The greatest number is: %d\n", num1);
+//         } else {
+//             printf("The greatest number is: %d\n", num3);
+//         }
+//     } else {
+//         if (num2 > num3) {
+//             printf("The greatest number is: %d\n", num2);
+//         } else {
+//             printf("The greatest number is: %d\n", num3);
+//         }
+//     }
 
-    return 0;
+//     return 0;
+// }
+
+
+// write a program to find sum of 10 natural number using for , while and do while
+
+// #include<stdio.h>
+// int main()
+// {
+//     int  i, sum;
+//     for (i = 1; i <= 10; i++) {
+//         sum = sum + i;
+//     }
+
+//     printf("Sum = %d", sum);
+//     return 0;
+// }
+
+#include <stdio.h>
+int main() 
+{
+    int num = 1;
+    int sum = 0;
+
+    do
+    {
+        sum = sum + num;
+        num++;
+    } while (num <= 10);
+
+    printf("Sum using do-while loop: %d\n", sum);
+
+    return 0;
 }
-b
+
+
+
+
+
