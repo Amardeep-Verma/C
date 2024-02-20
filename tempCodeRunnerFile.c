@@ -1,9 +1,22 @@
 #include<stdio.h>
 int main()
-{
-    int a=8,b=12,c=3;
-    if(a>c){
-        if(b>a)
+{ 
+    int a=20,b=12,c=7,d=15;
+    if(a>b && a>c)
+    {
+        printf("a is Greater");
     }
-    return 0;
+    else if(b>c && b>d)
+    {
+        printf("b  is greater");
+    }
+    else if(c>a && c>d)
+    {
+        printf("c is greater");
+    }
+    else
+    {
+        printf("d is greater");
+    }
+     return 0;
 }
