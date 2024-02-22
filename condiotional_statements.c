@@ -1297,68 +1297,101 @@ int main() {
 //     return 0;
 // }
 
+// #include <stdio.h>
+// int main() 
+// {
+//     int num = ;
+//     int sum = 0;
+
+//     do
+//     {
+//         sum = sum + num;
+//         num++;
+//     } while (num <= 10);
+
+//     printf("Sum using do-while loop: %d\n", sum);
+
+//     return 0;
+// }
+
+// #include<stdio.h>  
+//  int main()    
+// {    
+// int n, reverse=0, rem;    
+// printf("Enter a number: ");    
+//   scanf("%d", &n);    
+//   while(n!=0)    
+//   {    
+//      rem=n%10;    
+//      reverse=reverse*10+rem;    
+//      n/=10;    
+//   }    
+//   printf("Reversed Number: %d",reverse);    
+// return 0;  
+// }   
+
+
+// #include <stdio.h>
+// int main() {
+
+//   int i, n;
+
+//   // initialize first and second terms
+//   int t1 = 0, t2 = 1;
+
+//   // initialize the next term (3rd term)
+//   int nextTerm = t1 + t2;
+
+//   // get no. of terms from user
+//   printf("Enter the number of terms: ");
+//   scanf("%d", &n);
+
+//   // print the first two terms t1 and t2
+//   printf("Fibonacci Series: %d, %d, ", t1, t2);
+
+//   // print 3rd to nth terms
+//   for (i = 3; i <= n; ++i) {
+//     printf("%d, ", nextTerm);
+//     t1 = t2;
+//     t2 = nextTerm;
+//     nextTerm = t1 + t2;
+//   }
+
+//   return 0;
+// }
+
+
+// arrays 
+
 #include <stdio.h>
-int main() 
+ 
+int main()
 {
-    int num = ;
-    int sum = 0;
-
-    do
+    int size, i, largest;
+ 
+    printf("\n Enter the size of the array: ");
+    scanf("%d", &size);
+    int array[size];  //Declaring array
+ 
+    //Input array elements
+ 
+    printf("\n Enter %d elements of the array: \n", size);
+ 
+    for (i = 0; i < size; i++)
+    {   
+        scanf(" %d", &array[i]);
+    }
+ 
+     //Declaring Largest element as the first element
+    largest = array[0];
+ 
+    for (i = 1; i < size; i++) 
     {
-        sum = sum + num;
-        num++;
-    } while (num <= 10);
-
-    printf("Sum using do-while loop: %d\n", sum);
-
-    return 0;
-}
-
-#include<stdio.h>  
- int main()    
-{    
-int n, reverse=0, rem;    
-printf("Enter a number: ");    
-  scanf("%d", &n);    
-  while(n!=0)    
-  {    
-     rem=n%10;    
-     reverse=reverse*10+rem;    
-     n/=10;    
-  }    
-  printf("Reversed Number: %d",reverse);    
-return 0;  
-}   
-
-
-#include <stdio.h>
-int main() {
-
-  int i, n;
-
-  // initialize first and second terms
-  int t1 = 0, t2 = 1;
-
-  // initialize the next term (3rd term)
-  int nextTerm = t1 + t2;
-
-  // get no. of terms from user
-  printf("Enter the number of terms: ");
-  scanf("%d", &n);
-
-  // print the first two terms t1 and t2
-  printf("Fibonacci Series: %d, %d, ", t1, t2);
-
-  // print 3rd to nth terms
-  for (i = 3; i <= n; ++i) {
-    printf("%d, ", nextTerm);
-    t1 = t2;
-    t2 = nextTerm;
-    nextTerm = t1 + t2;
-  }
-
-  return 0;
-}
-
-
-
+        if (largest < array[i])
+        largest = array[i];
+        }
+ 
+    printf("\n largest element present in the given array is : %d", largest);
+ 
+    return 0;
+ }
