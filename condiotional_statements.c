@@ -1254,33 +1254,33 @@ int main() {
 //         printf("You are a child.");
 //     }else if(age>18){
 //         printf("You are an adult");
-//     }
-//     return 0;
-// }#include <stdio.h>
+// //     }
+// //     return 0;
+// // }#include <stdio.h>
 
-// int main() {
-//     int num1, num2, num3;
+// // int main() {
+// //     int num1, num2, num3;
 
    
-//     printf("Enter three numbers: ");
-//     scanf("%d %d %d", &num1, &num2, &num3);
+// //     printf("Enter three numbers: ");
+// //     scanf("%d %d %d", &num1, &num2, &num3);
 
-//     if (num1 > num2) {
-//         if (num1 > num3) {
-//             printf("The greatest number is: %d\n", num1);
-//         } else {
-//             printf("The greatest number is: %d\n", num3);
-//         }
-//     } else {
-//         if (num2 > num3) {
-//             printf("The greatest number is: %d\n", num2);
-//         } else {
-//             printf("The greatest number is: %d\n", num3);
-//         }
-//     }
+// //     if (num1 > num2) {
+// //         if (num1 > num3) {
+// //             printf("The greatest number is: %d\n", num1);
+// //         } else {
+// //             printf("The greatest number is: %d\n", num3);
+// //         }
+// //     } else {
+// //         if (num2 > num3) {
+// //             printf("The greatest number is: %d\n", num2);
+// //         } else {
+// //             printf("The greatest number is: %d\n", num3);
+// //         }
+// //     }
 
-//     return 0;
-// }
+// //     return 0;
+// // }
 
 
 // write a program to find sum of 10 natural number using for , while and do while
@@ -1363,35 +1363,138 @@ int main() {
 
 // arrays 
 
-#include <stdio.h>
+// #include <stdio.h>
  
+// int main()
+// {
+//     int size, i, largest;
+ 
+//     printf("\n Enter the size of the array: ");
+//     scanf("%d", &size);
+//     int array[size];  //Declaring array
+ 
+//     //Input array elements
+ 
+//     printf("\n Enter %d elements of the array: \n", size);
+ 
+//     for (i = 0; i < size; i++)
+//     {   
+//         scanf(" %d", &array[i]);
+//     }
+ 
+//      //Declaring Largest element as the first element
+//     largest = array[0];
+ 
+//     for (i = 1; i < size; i++) 
+//     {
+//         if (largest < array[i])
+//         largest = array[i];
+//         }
+ 
+//     printf("\n largest element present in the given array is : %d", largest);
+ 
+//     return 0;
+//  }
+
+// SWITCH CASE
+
+// #include<stdio.h>
+// int main()
+// {
+//      int day;
+//      printf("Enter day : ");
+//      scanf("%d",&day);
+//      switch(day){
+//          case 1 : printf("Monday");
+//          break;
+//          case 2 : printf("Tuesday");
+//          break;
+//          case 3 : printf("Wednesday ");
+//          break;
+//          case 4 : printf("Thrusday");
+//          break;
+//          default : printf("Enter a valid day ");
+//          break;
+//      }
+// }
+
+
+#include<stdio.h>
 int main()
 {
-    int size, i, largest;
- 
-    printf("\n Enter the size of the array: ");
-    scanf("%d", &size);
-    int array[size];  //Declaring array
- 
-    //Input array elements
- 
-    printf("\n Enter %d elements of the array: \n", size);
- 
-    for (i = 0; i < size; i++)
-    {   
-        scanf(" %d", &array[i]);
+    char suite = 2;
+    switch (suite){
+        case 1:
+            printf("Diamonds\n");
+        case 2:
+            printf("Spade\n");
+         default:("Heart\n");   
     }
- 
-     //Declaring Largest element as the first element
-    largest = array[0];
- 
-    for (i = 1; i < size; i++) 
-    {
-        if (largest < array[i])
-        largest = array[i];
-        }
- 
-    printf("\n largest element present in the given array is : %d", largest);
- 
+    printf("I thought one wears a suite\n");
+
     return 0;
- }
+}
+
+// reverse a string 
+
+#include <stdio.h>
+int main()
+{
+  char str[1000], rev[1000];
+  int i, j, count = 0;
+  scanf("%s", str);
+  printf("\nString Before Reverse: %s", str);
+  //finding the length of the string
+  while (str[count] != '\0')
+  {
+    count++;
+  }
+  j = count - 1;
+
+  //reversing the string by swapping
+  for (i = 0; i < count; i++)
+  {
+    rev[i] = str[j];
+    j--;
+  }
+
+  printf("\nString After Reverse: %s", rev);
+}
+
+
+#include<stdio.h>
+
+#include<conio.h>
+#include<string.h>
+
+int main()
+{
+    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+    char number[10];
+    int flag = 0;
+    int length, i = 0;
+
+    printf("\n\nEnter a number: ");
+    scanf("%s", number);
+
+    length = strlen(number);
+
+    // till string does not end
+    while(number[i++] != '\0')    // same as while(length-->0)
+    {
+        if(number[i] == '.')    // decimal point is present
+        {
+            flag = 1;
+            break;
+        }
+    }
+
+    // if(0) is same as if(false)
+    if(flag)
+        printf("\n\n\n\tEntered Number is a Floating point Number\n\n");
+    else
+        printf("\n\n\n\tEntered Number is a integer Number\n\n");
+
+    printf("\n\n\n\n\t\t\tCoding is Fun !\n\n\n");
+    return 0;
+}
