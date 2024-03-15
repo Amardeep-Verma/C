@@ -13,7 +13,7 @@ int main()
     else{
         printf("You are not an adult\n");
         printf("you cannot vote ");
-       
+
     }
 
      return 0;
@@ -79,7 +79,7 @@ int main() {
 
 
 
-// TERNARY OPERATOR 
+// TERNARY OPERATOR
 
 // SYNTAX - Condition ? doSomething if TRUE : doSomething if FALSE;
 #include<stdio.h>
@@ -93,7 +93,7 @@ int main()
 
 }
 
- 
+
 
 // SWITCH CASE
 
@@ -183,7 +183,7 @@ int main()
     }else{
         printf("Wrong marks ");
 
- 
+
     }
     return 0;
 }
@@ -264,7 +264,7 @@ int main() {
 
 
 
-LOOPS 
+LOOPS
 
 print values from 1 to 100
 #include<stdio.h>
@@ -294,7 +294,7 @@ int main()
     printf("%d\n",--i);
     printf("%d\n",i);
 
-    
+
 }
 
 #include<stdio.h>
@@ -308,15 +308,15 @@ int main()
 
 program that calculates the sum
  of all even numbers from 1 to 50 using a for loop:
- 
+
 
 #include<stdio.h>
 int main()
 {   int sum = 0;
     for(int i=1 ; i <=50; i++){
-         //check if the number is even 
+         //check if the number is even
          if (i % 2 == 0 ){
-            // add the even number to the sum 
+            // add the even number to the sum
             sum +=i;
          }
     }
@@ -401,7 +401,7 @@ int main()
 
 
 
-// Print the sum of First n natural number 
+// Print the sum of First n natural number
 #include<stdio.h>
 int main()
 {
@@ -427,11 +427,11 @@ int main()
     int table;
     printf("Enter table no :\n");
     scanf("%d", &table);
-    
+
     for(int i = 1;i<=10;i++){
         printf("%d x %d = %d\n",table,i,i*table);
     }
-    
+
 }
 
 
@@ -487,7 +487,7 @@ int main()
     {
         printf("Thank you");
     }
-    
+
 }
 
 
@@ -531,7 +531,7 @@ int main()
 }
 
 
-// Program to find factorial of a number n 
+// Program to find factorial of a number n
 
 #include<stdio.h>
 int main()
@@ -583,7 +583,7 @@ int main()
 // write 2 functions one to print hello and other to print goodbye
 #include<stdio.h>
 
-void printHello(); // declaration prototype 
+void printHello(); // declaration prototype
 
 void goodBye();
 int main(){
@@ -609,7 +609,7 @@ int main(){
     char ch;
     printf("Enter f for french and i for indian\n");
     scanf("%c",&ch);
-    
+
     if(ch == 'i' ){
             printNamaste();
     } else if( ch == 'f'){
@@ -622,7 +622,7 @@ int main(){
 }
 
 void printNamaste(){
-    printf("Namaste \n"); 
+    printf("Namaste \n");
 
 }
 void printBonjour(){
@@ -762,7 +762,7 @@ int main()
 int main()
 {
     int a=5;
-   
+
     int c;
 
     printf("The value of a = %d\n",a);
@@ -821,75 +821,75 @@ void printHW(int count) {
     printHW(count-1);
 
 }
-    
 
-
-
-#include <stdio.h>  
-  
-int main()  
-{  
-    int A;  
-  
-    printf("Enter the number A: ");  
-    scanf("%d", &A);  
-  
-    if (A > 0)  
-        printf("%d is positive.", A);  
-    else if (A < 0)  
-        printf("%d is negative.", A);  
-    else if (A == 0)  
-        printf("%d is zero.", A);  
-  
-    return 0;  
-}  
 
 
 
 #include <stdio.h>
- 
+
+int main()
+{
+    int A;
+
+    printf("Enter the number A: ");
+    scanf("%d", &A);
+
+    if (A > 0)
+        printf("%d is positive.", A);
+    else if (A < 0)
+        printf("%d is negative.", A);
+    else if (A == 0)
+        printf("%d is zero.", A);
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+
 
 int main()
 {
     char ch = 'A';
- 
- 
+
+
     if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E'
         || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O'
         || ch == 'u' || ch == 'U') {
- 
+
         printf("The character %c is a vowel.\n", ch);
     }
     else {
         printf("The character %c is a consonant.\n", ch);
     }
- 
+
     return 0;
 }
 
 
-//  program to find LCM of two numbers 
-#include <stdio.h> 
+//  program to find LCM of two numbers
+#include <stdio.h>
 
 
-int main() 
-{ 
-	int x = 15, y = 25, max; 
-	max = (x > y) ? x : y; 
+int main()
+{
+    int x = 15, y = 25, max;
+    max = (x > y) ? x : y;
 
-	// While loop to check if max variable 
-	// is divisible by x and y 
-	while (1) { 
-		if (max % x == 0 && max % y == 0) { 
-			printf("The LCM of %d and %d is %d.", x, y, 
-				max); 
-			break; 
-		} 
+    // While loop to check if max variable
+    // is divisible by x and y
+    while (1) {
+        if (max % x == 0 && max % y == 0) {
+            printf("The LCM of %d and %d is %d.", x, y,
+                max);
+            break;
+        }
 
-		++max; 
-	} 
+        ++max;
+    }
 
-	return 0; 
+    return 0;
 }
 
 
@@ -899,19 +899,19 @@ int main()
 
 int main() {
     int row, coloumns;
-    char symbol;  
+    char symbol;
 
     printf("Enter no of rows: ");
     scanf("%d", &row);
     printf("Enter no of coloumns: ");
     scanf("%d", &coloumns);
     printf("Enter symbol: ");
-    scanf(" %c", &symbol);  
+    scanf(" %c", &symbol);
 
     for(int i = 0; i < row; i++) {
         for(int j = 0; j < coloumns; j++)
-            printf("%c ", symbol);  
-        printf("\n"); 
+            printf("%c ", symbol);
+        printf("\n");
     }
 
     return 0;
@@ -975,7 +975,7 @@ int main()
 #include <stdio.h>
 
 int main() {
-  
+
     double celsius, fahrenheit;
 
 
@@ -984,7 +984,7 @@ int main() {
 
     fahrenheit = (celsius * 9 / 5) + 32;
 
-    
+
     printf("Temperature in Fahrenheit: %.2f\n", fahrenheit);
 
     return 0;
@@ -1094,7 +1094,7 @@ int main()
 }
 
 // if(condition){
-//     //statements 
+//     //statements
 // }
 
 
@@ -1134,7 +1134,7 @@ int main()
 int main() {
     int num1, num2, num3;
 
-   
+
     printf("Enter three numbers: ");
     scanf("%d %d %d", &num1, &num2, &num3);
 
@@ -1156,9 +1156,9 @@ int main() {
 }
 */
 
-//write a program to develop a calculator using switch   
-// write a program to print week days using switch
-// write a program to print vowels using switch
+// write a program to develop a calculator using switch
+//  write a program to print week days using switch
+//  write a program to print vowels using switch
 
 // #include<stdio.h>
 // int main()
@@ -1196,55 +1196,53 @@ int main() {
 // 	while(i<=10)
 // 	{
 // 		printf("%d\n",i);
-// 		i = i+1;		
+// 		i = i+1;
 // 	}
 // 	printf("\n");
 // }
 
+// armstrong no
 
-
-// armstrong no 
-
-// #include<stdio.h>  
-//  int main()    
-// {    
-// int n,r,sum=0,temp;    
-// printf("enter the number=");    
-// scanf("%d",&n);    
-// temp=n;    
-// while(n>0)    
-// {    
-// r=n%10;    
-// sum=sum+(r*r*r);    
-// n=n/10;    
-// }    
-// if(temp==sum)    
-// printf("armstrong  number ");    
-// else    
-// printf("not armstrong number");    
-// return 0;  
-// }   
+// #include<stdio.h>
+//  int main()
+// {
+// int n,r,sum=0,temp;
+// printf("enter the number=");
+// scanf("%d",&n);
+// temp=n;
+// while(n>0)
+// {
+// r=n%10;
+// sum=sum+(r*r*r);
+// n=n/10;
+// }
+// if(temp==sum)
+// printf("armstrong  number ");
+// else
+// printf("not armstrong number");
+// return 0;
+// }
 
 // palindrome
 
-// #include<stdio.h>  
-// int main()    
-// {    
-// int n,r,sum=0,temp;    
-// printf("enter the number=");    
-// scanf("%d",&n);    
-// temp=n;    
-// while(n>0)    
-// {    
-// r=n%10;    
-// sum=(sum*10)+r;    
-// n=n/10;    
-// }    
-// if(temp==sum)    
-// printf("palindrome number ");    
-// else    
-// printf("not palindrome");   
-// return 0;  
+// #include<stdio.h>
+// int main()
+// {
+// int n,r,sum=0,temp;
+// printf("enter the number=");
+// scanf("%d",&n);
+// temp=n;
+// while(n>0)
+// {
+// r=n%10;
+// sum=(sum*10)+r;
+// n=n/10;
+// }
+// if(temp==sum)
+// printf("palindrome number ");
+// else
+// printf("not palindrome");
+// return 0;
 // }   #include<stdio.h>
 // int main()
 // {   int age;
@@ -1261,7 +1259,6 @@ int main() {
 // // int main() {
 // //     int num1, num2, num3;
 
-   
 // //     printf("Enter three numbers: ");
 // //     scanf("%d %d %d", &num1, &num2, &num3);
 
@@ -1282,7 +1279,6 @@ int main() {
 // //     return 0;
 // // }
 
-
 // write a program to find sum of 10 natural number using for , while and do while
 
 // #include<stdio.h>
@@ -1298,7 +1294,7 @@ int main() {
 // }
 
 // #include <stdio.h>
-// int main() 
+// int main()
 // {
 //     int num = ;
 //     int sum = 0;
@@ -1314,22 +1310,21 @@ int main() {
 //     return 0;
 // }
 
-// #include<stdio.h>  
-//  int main()    
-// {    
-// int n, reverse=0, rem;    
-// printf("Enter a number: ");    
-//   scanf("%d", &n);    
-//   while(n!=0)    
-//   {    
-//      rem=n%10;    
-//      reverse=reverse*10+rem;    
-//      n/=10;    
-//   }    
-//   printf("Reversed Number: %d",reverse);    
-// return 0;  
-// }   
-
+// #include<stdio.h>
+//  int main()
+// {
+// int n, reverse=0, rem;
+// printf("Enter a number: ");
+//   scanf("%d", &n);
+//   while(n!=0)
+//   {
+//      rem=n%10;
+//      reverse=reverse*10+rem;
+//      n/=10;
+//   }
+//   printf("Reversed Number: %d",reverse);
+// return 0;
+// }
 
 // #include <stdio.h>
 // int main() {
@@ -1360,39 +1355,38 @@ int main() {
 //   return 0;
 // }
 
-
-// arrays 
+// arrays
 
 // #include <stdio.h>
- 
+
 // int main()
 // {
 //     int size, i, largest;
- 
+
 //     printf("\n Enter the size of the array: ");
 //     scanf("%d", &size);
 //     int array[size];  //Declaring array
- 
+
 //     //Input array elements
- 
+
 //     printf("\n Enter %d elements of the array: \n", size);
- 
+
 //     for (i = 0; i < size; i++)
-//     {   
+//     {
 //         scanf(" %d", &array[i]);
 //     }
- 
+
 //      //Declaring Largest element as the first element
 //     largest = array[0];
- 
-//     for (i = 1; i < size; i++) 
+
+//     for (i = 1; i < size; i++)
 //     {
 //         if (largest < array[i])
 //         largest = array[i];
 //         }
- 
+
 //     printf("\n largest element present in the given array is : %d", largest);
- 
+
 //     return 0;
 //  }
 
@@ -1418,54 +1412,54 @@ int main() {
 //      }
 // }
 
-
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     char suite = 2;
-    switch (suite){
-        case 1:
-            printf("Diamonds\n");
-        case 2:
-            printf("Spade\n");
-         default:("Heart\n");   
+    switch (suite)
+    {
+    case 1:
+        printf("Diamonds\n");
+    case 2:
+        printf("Spade\n");
+    default:
+        ("Heart\n");
     }
     printf("I thought one wears a suite\n");
 
     return 0;
 }
 
-// reverse a string 
+// reverse a string
 
 #include <stdio.h>
 int main()
 {
-  char str[1000], rev[1000];
-  int i, j, count = 0;
-  scanf("%s", str);
-  printf("\nString Before Reverse: %s", str);
-  //finding the length of the string
-  while (str[count] != '\0')
-  {
-    count++;
-  }
-  j = count - 1;
+    char str[1000], rev[1000];
+    int i, j, count = 0;
+    scanf("%s", str);
+    printf("\nString Before Reverse: %s", str);
+    // finding the length of the string
+    while (str[count] != '\0')
+    {
+        count++;
+    }
+    j = count - 1;
 
-  //reversing the string by swapping
-  for (i = 0; i < count; i++)
-  {
-    rev[i] = str[j];
-    j--;
-  }
+    // reversing the string by swapping
+    for (i = 0; i < count; i++)
+    {
+        rev[i] = str[j];
+        j--;
+    }
 
-  printf("\nString After Reverse: %s", rev);
+    printf("\nString After Reverse: %s", rev);
 }
 
+#include <stdio.h>
 
-#include<stdio.h>
-
-#include<conio.h>
-#include<string.h>
+#include <conio.h>
+#include <string.h>
 
 int main()
 {
@@ -1480,9 +1474,9 @@ int main()
     length = strlen(number);
 
     // till string does not end
-    while(number[i++] != '\0')    // same as while(length-->0)
+    while (number[i++] != '\0') // same as while(length-->0)
     {
-        if(number[i] == '.')    // decimal point is present
+        if (number[i] == '.') // decimal point is present
         {
             flag = 1;
             break;
@@ -1490,7 +1484,7 @@ int main()
     }
 
     // if(0) is same as if(false)
-    if(flag)
+    if (flag)
         printf("\n\n\n\tEntered Number is a Floating point Number\n\n");
     else
         printf("\n\n\n\tEntered Number is a integer Number\n\n");
@@ -1499,93 +1493,95 @@ int main()
     return 0;
 }
 
-//hello world without main function
+// hello world without main function
 
-#include<stdio.h>    
- #define start main    
-void start() {    
-   printf("Hello");    
-}   
+#include <stdio.h>
+#define start main
+void start()
+{
+    printf("Hello");
+}
 
 // numbers in character
-#include<stdio.h>    
-#include<stdlib.h>  
-int main(){  
-long int n,sum=0,r;    
-system("cls");  
-printf("enter the number=");    
-scanf("%ld",&n);    
-while(n>0)    
-{    
-r=n%10;    
-sum=sum*10+r;    
-n=n/10;    
-}    
-n=sum;    
-while(n>0)    
-{    
-r=n%10;    
-switch(r)    
-{    
-case 1:    
-printf("one ");    
-break;    
-case 2:    
-printf("two ");    
-break;    
-case 3:    
-printf("three ");    
-break;    
-case 4:    
-printf("four ");    
-break;    
-case 5:    
-printf("five ");    
-break;    
-case 6:    
-printf("six ");    
-break;    
-case 7:    
-printf("seven ");    
-break;    
-case 8:    
-printf("eight ");    
-break;    
-case 9:    
-printf("nine ");    
-break;    
-case 0:    
-printf("zero ");    
-break;    
-default:    
-printf("tttt");    
-break;    
-}    
-n=n/10;    
-}    
-return 0;  
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    long int n, sum = 0, r;
+    system("cls");
+    printf("enter the number=");
+    scanf("%ld", &n);
+    while (n > 0)
+    {
+        r = n % 10;
+        sum = sum * 10 + r;
+        n = n / 10;
+    }
+    n = sum;
+    while (n > 0)
+    {
+        r = n % 10;
+        switch (r)
+        {
+        case 1:
+            printf("one ");
+            break;
+        case 2:
+            printf("two ");
+            break;
+        case 3:
+            printf("three ");
+            break;
+        case 4:
+            printf("four ");
+            break;
+        case 5:
+            printf("five ");
+            break;
+        case 6:
+            printf("six ");
+            break;
+        case 7:
+            printf("seven ");
+            break;
+        case 8:
+            printf("eight ");
+            break;
+        case 9:
+            printf("nine ");
+            break;
+        case 0:
+            printf("zero ");
+            break;
+        default:
+            printf("tttt");
+            break;
+        }
+        n = n / 10;
+    }
+    return 0;
 }
 
 #include <stdio.h>
-int main() {
-  long number, temp;
-  int count = 0;
-  printf("Enter an integer: ");
-  scanf("%ld", &number);
+int main()
+{
+    long number, temp;
+    int count = 0;
+    printf("Enter an integer: ");
+    scanf("%ld", &number);
 
+    temp = number;
 
-  temp = number;
+    do
+    {
+        temp /= 10;
+        ++count;
+    } while (temp != 0);
 
-
-  do {
-    temp /= 10;
-    ++count;
-  } while (temp != 0);
-
-  printf("Number of digits in the number %ld is: %d", number,count);
+    printf("Number of digits in the number %ld is: %d", number, count);
 }
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -1597,10 +1593,10 @@ int main()
 
     printf("\n\nEnter %d integers \n\n", n);
 
-    for(c = 0; c < n; c++)
+    for (c = 0; c < n; c++)
     {
         scanf("%d", &array[c]);
-        sum += array[c];    // same as sum = sum + array[c]
+        sum += array[c]; // same as sum = sum + array[c]
     }
 
     printf("\n\nSum = %d\n\n", sum);
