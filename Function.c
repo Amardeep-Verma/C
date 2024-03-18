@@ -14,7 +14,6 @@
 
 // #include <stdio.h>
 // char fun();
-
 // int main()
 // {
 //     char c = fun();
@@ -24,3 +23,17 @@
 // {
 //     return 'a';
 // }
+
+#include <stdio.h>
+
+void myFunction()
+{ // creating a function
+    printf("I just got executed\n");
+}
+
+int main()
+{
+    myFunction(); // calling the function
+    myFunction();
+    return 0;
+}
