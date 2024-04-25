@@ -61,19 +61,57 @@ int main()
 //  return 0;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     int marks[10], i, n, sum = 0, average;
+//     printf("Enter n");
+//     scanf("%d", &n);
+//     for (i = 0; i < n; i++)
+//     {
+//         printf("Enter marks %d", i + 1);
+//         scanf("%d", &marks[i]);
+//         sum += marks[i];
+//     }
+//     average = sum / n;
+//     printf("Average is %d", average);
+//     return 0;
+// }
 #include <stdio.h>
-
 int main()
 {
-    int number, table;
-    printf("Enter any number:");
-    scanf("%d", &number);
-
-    for (int i = 1; i <= 10; i++)
+    int mat[2][2], trans[2][2], i, j;
+    printf("Enter matrix elements: \n");
+    for (i = 0; i < 2; i++)
     {
-        table = number * i;
-        printf("%d\n ", table);
+        for (j = 0; j < 2; j++)
+        {
+            scanf("%d", &mat[i][j]);
+        }
     }
-
-    return 0;
+    printf("Matrix elements:");
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            printf("%d", mat[i][j]);
+        }
+        printf("\n");
+    }
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            trans[j][i] = mat[i][j];
+        }
+    }
+    printf("Transpose elements:\n");
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            printf("%d", trans[i][j]);
+        }
+        printf("\n");
+    }
 }
